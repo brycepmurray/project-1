@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        #map {
+            height: 250px;
+            width: 100%;
+        }
+    </style>
+    <title>Something Nerdy...</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-2 text-center">
+                <h3>Topic</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, fugiat adipisci magni, quis accusamus mollitia quidem recusandae dicta.</h4>
+                <button class="btn btn-default" type="submit">subscribe</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-2">
+        <div class="row">
+            <div class="col-xs-2 col-xs-offset-2">
+                <img src="//placehold.it/75x75" alt="statistical image" class="image-rounded">
+                <h5>lorem ipsum</h5>
+                <h6>lorem ipsum lorem ipsum...</h6>
+            </div>
+            <div class="col-xs-2">
+                <img src="//placehold.it/75x75" alt="statistical image" class="image-rounded">
+                <h5>lorem ipsum</h5>
+                <h6>lorem ipsum lorem ipsum...</h6>
+            </div>
+            <div class="col-xs-2">
+                <img src="//placehold.it/75x75" alt="statistical image" class="image-rounded">
+                <h5>lorem ipsum</h5>
+                <h6>lorem ipsum lorem ipsum...</h6>
+            </div>
+            <div class="col-xs-2">
+                <img src="//placehold.it/75x75" alt="statistical image" class="image-rounded">
+                <h5>lorem ipsum</h5>
+                <h6>lorem ipsum lorem ipsum...</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h5>enter email below</h5>
+                <h6>leave us feedback</h6>
+                <form action="">
+                    <input type="password" placeholder="bob.bob@gmail.com">
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var uluru = {
+                    lat: 43.6427820,
+                    lng: -116.2647820
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+    </div>
+    <div class="container-4">
+        <div class="row">
+            <div class="col-xs-1 text-center col-xs-offset-2">
+                <link rel="stylesheet" href="">
+                <img src="//placehold.it/25x25" alt="">
+                <h6>Twitter</h6>
+            </div>
+            <div class="col-xs-1">
+                <link rel="stylesheet" href="">
+                <img src="//placehold.it/25x25" alt="">
+                <h6>Facebook</h6>
+            </div>
+            <div class="col-xs-1">
+                <link rel="stylesheet" href="">
+                <img src="//placehold.it/25x25" alt="">
+                <h6>Youtube</h6>
+            </div>
+            <div class="col-xs-1">
+                <link rel="stylesheet" href="">
+                <img src="//placehold.it/25x25" alt="">
+                <h6>Instagram</h6>
+            </div>
+            <div class="col-xs-2 col-xs-offset-3">
+                <h6>thereandbackagain inc.</h6>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
